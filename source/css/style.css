@@ -1,0 +1,157 @@
+/* Global Variables */
+:root {
+  --color-coral-tree: #AE7C78;
+  --color-white: #FFFFFF;
+}
+
+.page {
+  font-family: "Montserrat", sans-serif, Arial;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+}
+
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Components */
+/* main-banner */
+.main-banner {
+  display: flex;
+  justify-content: space-between;
+
+  color: var(--color-coral-tree);
+}
+
+.main-banner__description-wrapper {
+  flex-basis: 384px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-banner__masonry {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 23px;
+}
+
+.main-banner__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+
+  font-family: 'Playfair Display', serif, Georgia;
+  font-weight: normal;
+  font-size: 44px;
+}
+
+.main-banner__subtitle {
+  margin-top: 0;
+  margin-bottom: 64px;
+  
+  font-size: 24px;
+}
+
+.main-banner__button {
+  align-self: flex-start;
+  padding: 30px 69px;
+  
+  font-family: "Montserrat", sans-serif, Arial;
+  font-weight: normal;
+  font-size: 16px;
+  text-decoration: none;
+
+  color: var(--color-white);
+
+  background-color: var(--color-coral-tree);
+  border-radius: 40px;
+}
+
+.main-banner__img:nth-child(2n - 1) {
+  margin-top: 59px;
+  margin-right: 20px;
+}
+
+/* benefits-list */
+.benefits-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  list-style-type: none;
+
+  color: var(--color-coral-tree);
+}
+
+.benefits-list__item {
+  display: flex;
+}
+
+.benefits-list__item::before {
+  flex-shrink: 0;
+  display: block;
+  margin-right: 20px;
+
+  content: "";
+}
+
+.benefits-list__item--truck::before {
+  width: 82px;
+  height: 52px;
+
+  background-image: url("../img/backgrounds/icon-truck.svg");
+}
+
+.benefits-list__item--bouquet::before {
+  width: 52px;
+  height: 52px;
+
+  background-image: url("../img/backgrounds/icon-bouquet.svg");
+
+}
+
+.benefits-list__item--camera::before {
+  width: 58px;
+  height: 52px;
+
+  background-image: url("../img/backgrounds/icon-camera.svg");
+}
+
+.benefits-list__description-wrapper {
+  width: 285px;
+}
+
+.benefits-list__title {
+  margin-top: 0;
+  margin-bottom: 8px;
+
+  font-weight: 500;
+}
+
+.benefits-list__subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Layouts */
+
+.main-hero {
+  margin-top: 81px;
+  margin-bottom: 80px;
+}
+
+.main-hero__main-banner {
+  margin-bottom: 48px;
+}
