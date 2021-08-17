@@ -1,0 +1,27 @@
+{
+  "name": "botanika",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pages": "gulp pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alibekmslv/botanika.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alibekmslv/botanika/issues"
+  },
+  "homepage": "https://github.com/alibekmslv/botanika#readme",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2"
+  }
+}
