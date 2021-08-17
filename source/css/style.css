@@ -23,6 +23,35 @@
 }
 
 /* Components */
+/* heading */
+.heading {
+  margin-top: 0;
+
+  font-family: 'Playfair Display', sans-serif, Georgia;
+  font-size: 36px;
+  letter-spacing: 0.02em;
+
+  color: var(--color-coral-tree);
+}
+
+.button {
+  width: 285px;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  font-family: "Montserrat", sans-serif, Arial;
+  font-weight: normal;
+  font-size: 16px;
+  text-decoration: none;
+
+  color: var(--color-white);
+
+  background-color: var(--color-coral-tree);
+  border-radius: 40px;
+}
+
 /* main-banner */
 .main-banner {
   display: flex;
@@ -59,21 +88,6 @@
   margin-bottom: 64px;
   
   font-size: 24px;
-}
-
-.main-banner__button {
-  align-self: flex-start;
-  padding: 30px 69px;
-  
-  font-family: "Montserrat", sans-serif, Arial;
-  font-weight: normal;
-  font-size: 16px;
-  text-decoration: none;
-
-  color: var(--color-white);
-
-  background-color: var(--color-coral-tree);
-  border-radius: 40px;
 }
 
 .main-banner__img:nth-child(2n - 1) {
@@ -145,8 +159,76 @@
   margin-bottom: 0;
 }
 
-/* Layouts */
+/* product-slide */
+.product-slide {
+  display: flex;
+  justify-content: center;
 
+  color: var(--color-coral-tree);
+}
+
+.product-slide__description-wrapper {
+  width: 387px;
+  margin-right: 20px;
+}
+
+.product-slide__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.product-slide__description {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.product-slide__description-list {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  row-gap: 24px;
+  margin-top: 0;
+  margin-bottom: 64px;
+}
+
+.product-slide__description-term {
+  display: none;
+}
+
+.product-slide__description-details--price {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+/* slider */
+.slider__arrow-controls {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.slider__arrow-button {
+  border: none;
+  width: 50px;
+  height: 16px;
+  padding: 0;
+
+  background-color: transparent;
+  background-image: url("../img/backgrounds/icon-arrow.svg");
+
+  cursor: pointer;
+}
+
+.slider__arrow-button--next {
+  transform: rotate(180deg);
+}
+
+
+/* Layouts */
+/* main-hero */
 .main-hero {
   margin-top: 81px;
   margin-bottom: 80px;
@@ -154,4 +236,15 @@
 
 .main-hero__main-banner {
   margin-bottom: 48px;
+}
+
+/* popular-products */
+.popular-products {
+  margin-bottom: 72px;
+}
+
+.popular-products__heading {
+  margin-bottom: 36px;
+
+  text-align: center;
 }
