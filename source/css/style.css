@@ -226,6 +226,53 @@
   transform: rotate(180deg);
 }
 
+/* category-card */
+.category-card {
+  position: relative;
+  width: 386px;
+  height: 442px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+
+  border-radius: 10px;
+
+  background-repeat: no-repeat;
+
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.category-card::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-coral-tree);
+  opacity: 0.6;
+  border-radius: 10px;
+}
+
+.category-card__title {
+  margin-top: 0;
+  margin-bottom: 8px;
+
+  font-family: 'Playfair Display', sans-serif, Georgia;
+  font-weight: 700;
+  font-size: 36px;
+
+  z-index: 1;
+}
+
+.category-card__description {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  z-index: 1;
+}
 
 /* Layouts */
 /* main-hero */
@@ -247,4 +294,14 @@
   margin-bottom: 36px;
 
   text-align: center;
+}
+
+/* product-categories */
+.product-categories {
+  margin-bottom: 80px;
+}
+
+.product-categories__cards {
+  display: flex;
+  justify-content: center;
 }
